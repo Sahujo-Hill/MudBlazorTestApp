@@ -1,6 +1,26 @@
 ﻿@inherits LayoutComponentBase
 
-@Body
+@* Required for Mud Blazor *@
+<MudThemeProvider />
+<MudPopoverProvider />
+<MudDialogProvider />
+<MudSnackbarProvider />
+
+<MudLayout>
+
+    <MudAppBar>
+
+    </MudAppBar>
+
+    <MudDrawer Open="true">
+
+    </MudDrawer>
+
+    <MudMainContent>
+        @Body
+    </MudMainContent>
+
+</MudLayout>
 
 <div id="blazor-error-ui">
     An unhandled error has occurred.
